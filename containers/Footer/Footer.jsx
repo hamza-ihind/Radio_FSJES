@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   Image,
 } from "react-native";
+// import { BlurView } from "react-native-blur";
 
 // Components
 import FooterBtn from "../../components/FooterBtn/FooterBtn";
@@ -17,10 +18,10 @@ import { SIZES, images, icons } from "../../constants";
 const Footer = ({ iconUrl, dimension, handlePress }) => {
   return (
     <SafeAreaView style={styles.container}>
-      <FooterBtn iconUrl={icons.menu} dimension="70%" text="home" />
-      <FooterBtn iconUrl={icons.menu} dimension="70%" text="browse" />
-      <FooterBtn iconUrl={icons.menu} dimension="70%" text="podcasts" />
-      <FooterBtn iconUrl={icons.menu} dimension="70%" text="account" />
+      <FooterBtn iconUrl={icons.home} dimension="60%" text="home" />
+      <FooterBtn iconUrl={icons.search} dimension="60%" text="browse" />
+      {/* <FooterBtn iconUrl={icons.menu} dimension="70%" text="podcasts" /> */}
+      <FooterBtn iconUrl={icons.user} dimension="60%" text="account" />
     </SafeAreaView>
   );
 };

@@ -13,11 +13,13 @@ import { COLORS, icons, images, SIZES } from "../constants";
 // Styles
 import ScreenHeaderBtn from "../components/ScreenHeaderBtn/ScreenHeaderBtn";
 import HomeText from "../components/HomeText/HomeText";
+import PopularPods from "../containers/PopularPods/PopularPods";
 import Welcome from "../components/Welcome/Welcome";
 import Footer from "../containers/Footer/Footer";
 
 import { StatusBar } from "react-native";
 import styles from "../components/Welcome/Welcome.style";
+import PopularNews from "../containers/PopularNews/PopularNews";
 
 const Home = () => {
   const router = useRouter();
@@ -53,8 +55,11 @@ const Home = () => {
             }}
           >
             <HomeText />
+            <PopularPods />
+            <PopularNews />
           </View>
         </ScrollView>
+
         <Footer />
       </ImageBackground>
     </SafeAreaView>
